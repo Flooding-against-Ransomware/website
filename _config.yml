@@ -56,3 +56,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
+header_pages:
+  - publications.md
+  - about.markdown

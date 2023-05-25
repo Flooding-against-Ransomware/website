@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+Nav_include: yes
+Nav_order: 10
 ---
 
 # Contacts
