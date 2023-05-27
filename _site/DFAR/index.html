@@ -86,22 +86,50 @@ FILE_EXT ← [“.doc”,“.pdf”,“.xls”,“.jpg”,“.mp4”,..];
 <h2 id="on-the-fly">On-The-Fly</h2>
 
 <p>On-the-flySnapshooting</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input:path forfileinwalkFiles(path)do ifisFile(f)then saveOTFSnapshot(path,f, digest(readBytes(path,f))); end end
-</code></pre></div></div>
+
+<pre><small><b>input</b>:path
+<b>for</b> fileinwalkFiles(path) <b>do</b>
+    <b>if</b> isFile(f) <b>then</b>
+        saveOTFSnapshot(path,f,digest(readBytes(path,f)));
+    <b>end</b>
+<b>end</b>
+</small></pre>
 
 <p>On-the-flyDataFlooding</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input:path whilekeepFloodingdo forfinwalkFiles(path)do b←readBytes(path,f); ifgetOTFSnaphot(path,f)=digest(b)then copy(b,randomFilePath(path)); end end end
 
-</code></pre></div></div>
+<pre><small><b>input</b>:path
+<b>while</b> keepFlooding <b>do</b>
+    <b>for</b> f in walkFiles(path) <b>do</b>
+        b ← readBytes(path,f);
+        <b>if</b> getOTFSnaphot(path,f)=digest(b)<b>then</b>
+            copy(b,randomFilePath(path));
+        <b>end</b>
+    <b>end</b>
+<b>end</b>
+</small></pre>
 
 <h2 id="shadow">Shadow</h2>
 
 <p>Shadow Snapshooting</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input:path forfileinwalkFiles(path)do ifisFile(f)then saveShadowSnapshot(path,readBytes(f)); end end
-</code></pre></div></div>
+
+<pre><small><b>input</b>:path
+<b>for</b> fileinwalkFiles(path) <b>do</b>
+    <b>if</b> isFile(f) <b>then</b>
+        saveShadowSnapshot(path,readBytes(f));
+    <b>end</b>
+<b>end</b>
+
+</small></pre>
 <p>Shadow Data Flooding</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input:path whilekeepFloodingdo forcntingetShadowSnapshots(path)do writeFile(rndFilePath(path),cnt); end end
-</code></pre></div></div>
+
+<pre><small><b>input</b>:path
+<b>while</b> keepFlooding <b>do </b>
+    <b>for</b> cnt in getShadowSnapshots(path) <b>do</b>
+        writeFile(rndFilePath(path),cnt);
+    <b>end</b>
+<b>end</b>
+</small></pre>
+
 
   </div>
 

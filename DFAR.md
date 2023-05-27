@@ -13,6 +13,8 @@ Nav_include: yes
 
 Random Data Flooding
 
+
+
 <pre><small><b>input</b>:path,minSize,maxSize
 FILE_EXT ← [“.doc”,“.pdf”,“.xls”,“.jpg”,“.mp4”,..];
 <b>while</b> keep Flooding <b>do</b>
@@ -36,27 +38,55 @@ FILE_EXT ← [“.doc”,“.pdf”,“.xls”,“.jpg”,“.mp4”,..];
 <b>end</b>
 </small></pre>
 
+
+
 ## On-The-Fly
 
 On-the-flySnapshooting
-```
-input:path forfileinwalkFiles(path)do ifisFile(f)then saveOTFSnapshot(path,f, digest(readBytes(path,f))); end end
-```
+
+<pre><small><b>input</b>:path
+<b>for</b> fileinwalkFiles(path) <b>do</b>
+    <b>if</b> isFile(f) <b>then</b>
+        saveOTFSnapshot(path,f,digest(readBytes(path,f)));
+    <b>end</b>
+<b>end</b>
+</small></pre>
 
 On-the-flyDataFlooding
-```
-input:path whilekeepFloodingdo forfinwalkFiles(path)do b←readBytes(path,f); ifgetOTFSnaphot(path,f)=digest(b)then copy(b,randomFilePath(path)); end end end
 
-```
+<pre><small><b>input</b>:path
+<b>while</b> keepFlooding <b>do</b>
+    <b>for</b> f in walkFiles(path) <b>do</b>
+        b ← readBytes(path,f);
+        <b>if</b> getOTFSnaphot(path,f)=digest(b)<b>then</b>
+            copy(b,randomFilePath(path));
+        <b>end</b>
+    <b>end</b>
+<b>end</b>
+</small></pre>
 
 
 ## Shadow
 
 Shadow Snapshooting
-```
-input:path forfileinwalkFiles(path)do ifisFile(f)then saveShadowSnapshot(path,readBytes(f)); end end
-```
+
+<pre><small><b>input</b>:path
+<b>for</b> fileinwalkFiles(path) <b>do</b>
+    <b>if</b> isFile(f) <b>then</b>
+        saveShadowSnapshot(path,readBytes(f));
+    <b>end</b>
+<b>end</b>
+
+</small></pre>
 Shadow Data Flooding
-```
-input:path whilekeepFloodingdo forcntingetShadowSnapshots(path)do writeFile(rndFilePath(path),cnt); end end
-```
+
+<pre><small><b>input</b>:path
+<b>while</b> keepFlooding <b>do </b>
+    <b>for</b> cnt in getShadowSnapshots(path) <b>do</b>
+        writeFile(rndFilePath(path),cnt);
+    <b>end</b>
+<b>end</b>
+</small></pre>
+
+
+
