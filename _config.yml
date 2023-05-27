@@ -58,6 +58,7 @@ plugins:
 
 
 header_pages:
+  - ranflood.md
   - DFaR.md
   - RIG.md
   - publications.md

@@ -40,7 +40,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/DFaR/">DFaR</a><a class="page-link" href="/RIG/">RIG</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/ranflood/">Ranflood software</a><a class="page-link" href="/DFaR/">DFaR</a><a class="page-link" href="/RIG/">RIG</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/about/">About</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -54,7 +54,54 @@
   <div class="post-content">
     <h1 id="data-flooding-against-ransomware---dfar">Data Flooding against Ransomware - DFaR</h1>
 
-<p><img src="/images/flowchart.png" alt="Flowchart" /></p>
+<p>3 tecniche di flooding</p>
+
+<h2 id="random">Random</h2>
+
+<p>Random Data Flooding</p>
+
+<pre><small><b>input</b>:path,minSize,maxSize
+FILE_EXT ← [“.doc”,“.pdf”,“.xls”,“.jpg”,“.mp4”,..];
+<b>while</b> keep Flooding <b>do</b>
+    f_size ← randomInt(minSize,maxSize);
+    cnt ← newByteArray(f_size);
+    ext ← rndSelect(FILE_EXT);
+    append(cnt,getHeader(ext));
+    seed ← random64Seed();//64-bitnumber
+    <b>for</b> i ← 0 to i &lt; (capacity(cnt)/64) <b>do</b>
+        seed ← seed^(seed≪13);
+        seed ← seed^(seed⋙7);
+        seed ← seed^(seed≪17);
+        append(cnt,seed);
+    <b>end</b>
+    <b>if</b> capacity(cnt) &gt; 0 <b>then</b>
+        r ← newByteArray(capacity(cnt));
+        r ← fillWithRandomBytes(r);
+        append(cnt,r);     
+    <b>end</b> 
+    writeFile( rndFilePath(path,ext),cnt); 
+<b>end</b>
+</small></pre>
+
+<h2 id="on-the-fly">On-The-Fly</h2>
+
+<p>On-the-flySnapshooting</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input:path forfileinwalkFiles(path)do ifisFile(f)then saveOTFSnapshot(path,f, digest(readBytes(path,f))); end end
+</code></pre></div></div>
+
+<p>On-the-flyDataFlooding</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input:path whilekeepFloodingdo forfinwalkFiles(path)do b←readBytes(path,f); ifgetOTFSnaphot(path,f)=digest(b)then copy(b,randomFilePath(path)); end end end
+
+</code></pre></div></div>
+
+<h2 id="shadow">Shadow</h2>
+
+<p>Shadow Snapshooting</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input:path forfileinwalkFiles(path)do ifisFile(f)then saveShadowSnapshot(path,readBytes(f)); end end
+</code></pre></div></div>
+<p>Shadow Data Flooding</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input:path whilekeepFloodingdo forcntingetShadowSnapshots(path)do writeFile(rndFilePath(path),cnt); end end
+</code></pre></div></div>
 
   </div>
 
