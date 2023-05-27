@@ -58,5 +58,8 @@ plugins:
 
 
 header_pages:
+  - DFAR.md
+  - RIG.md
   - publications.md
   - about.markdown
+
