@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
    aimed at countering the malicious action of ransomware.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: RanFlood
+#twitter_username: RanFlood
 github_username:  RanFlood
 
 # Build settings
@@ -58,7 +58,7 @@ plugins:
 
 
 header_pages:
-  - DFAR.md
+  - DFaR.md
   - RIG.md
   - publications.md
   - about.markdown

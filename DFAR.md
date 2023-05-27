@@ -1,10 +1,10 @@
 ---
 layout: page
-title: DFAR
-permalink: /DFAR/
+title: DFaR
+permalink: /DFaR/
 Nav_include: yes
 ---
 
-# Data Flooding Against Ransomware - DFAR
+# Data Flooding against Ransomware - DFaR
 
 ![Flowchart](/images/flowchart.png)
