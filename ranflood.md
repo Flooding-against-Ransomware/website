@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ranflood software
+title: Ranflood
 permalink: /ranflood/
 Nav_include: yes
 ---
