@@ -22,7 +22,7 @@ title: Flooding against Ransomware
 #subtitle: Data Flooding against Ransomware
 email: RanFlood@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The Ranflodd project is an innovative system of techniques
+  The "Flooding against Ransomware" project is an innovative system of techniques
    aimed at countering the malicious action of ransomware.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

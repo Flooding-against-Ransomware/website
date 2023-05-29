@@ -18,12 +18,14 @@ We call this dynamic honeypot technique *Data Flooding against Ransomware*.
 
 Data Flooding against Ransomware, tackling the main phases of detection, mitigation, and restoration, based on a mix of honeypots, resource contention, and moving target defence. These solutions hinge on detecting and contrasting the action of ransomware by flooding specific locations (e.g., the attack location, sensible folders, etc.) of the victim’s disk with files. Besides the abstract definition of this family of solutions, we present an open-source tool that implements the mitigation and restoration phases, called [Ranflood](/DFAR/). In particular, Ranflood supports three flooding strategies, apt for different attack scenarios. At its core, Ranflood buys time for the user to counteract the attack, e.g., to access an unresponsive, attacked server and shut it down manually. We benchmark the efficacy of Ranflood by performing a thorough evaluation over 6 crypto-ransomware (e.g., WannaCry, LockBit), showing that Ranflood consistently lowers the amount of files lost to encryption.
 
+<a class="btn btn-primary text-white" href="/DFAR/" role="button">Data Flooding against Ransomware</a>
 
 ### RIG 
 
 Wanting to validate this technique, we created an experimental setting using some workstations where we ran malware simulations (eg WannaCry, LockBit) contrasting them with RanFlood. This experimental setting deserves a separate chapter since it allows you to perform numerous tests in safety, with commonly used computers (simulating a situation as likely as possible) and without large investments such as the purchase of a server.
 
 
+<a class="btn btn-primary text-white" href="/RIG/" role="button">RIG</a>
 
 
 ### Results 

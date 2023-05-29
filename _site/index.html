@@ -64,8 +64,8 @@
   </div>
 -->
 
-    <div class="container">
-      <nav class="navbar navbar-expand-xl  navbar-light bg-light">
+    <div class="container ">
+      <nav class="navbar navbar-expand-xl  navbar-light bg-light justify-content-center">
         <a class="navbar-brand " href="/">
           <img src="/images/favicon/android-chrome-192x192.png"width="30" height="30" class="d-inline-block align-top" alt="">
            Flooding against Ransomware
@@ -73,22 +73,22 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto justify-content-end">
             <li class="nav-item">  
-              <a class="nav-link text-primary" href="/Ranflood/">Ranflood</a>
+              <a class="nav-link text-primary font-weight-bold" href="/Ranflood/">Ranflood</a>
             </li>
             <li class="nav-item">  
-              <a class="nav-link text-primary" href="/DFaR/">DFaR</a>
+              <a class="nav-link text-primary font-weight-bold" href="/DFaR/">DFaR</a>
             </li>
             <li class="nav-item">  
-              <a class="nav-link text-primary " href="/RIG/">RIG</a>
+              <a class="nav-link text-primary font-weight-bold" href="/RIG/">RIG</a>
             </li>
             <li class="nav-item">  
-              <a class="nav-link text-primary" href="/publications/">Publications</a>
+              <a class="nav-link text-primary font-weight-bold" href="/publications/">Publications</a>
             </li>
             <li class="nav-item">  
-              <a class="nav-link text-primary" href="/about/">About</a>
+              <a class="nav-link text-primary font-weight-bold" href="/about/">About</a>
             </li>
           </ul>
 
@@ -122,9 +122,13 @@ We call this dynamic honeypot technique <em>Data Flooding against Ransomware</em
 
 <p>Data Flooding against Ransomware, tackling the main phases of detection, mitigation, and restoration, based on a mix of honeypots, resource contention, and moving target defence. These solutions hinge on detecting and contrasting the action of ransomware by flooding specific locations (e.g., the attack location, sensible folders, etc.) of the victim’s disk with files. Besides the abstract definition of this family of solutions, we present an open-source tool that implements the mitigation and restoration phases, called <a href="/DFAR/">Ranflood</a>. In particular, Ranflood supports three flooding strategies, apt for different attack scenarios. At its core, Ranflood buys time for the user to counteract the attack, e.g., to access an unresponsive, attacked server and shut it down manually. We benchmark the efficacy of Ranflood by performing a thorough evaluation over 6 crypto-ransomware (e.g., WannaCry, LockBit), showing that Ranflood consistently lowers the amount of files lost to encryption.</p>
 
+<p><a class="btn btn-primary text-white" href="/DFAR/" role="button">Data Flooding against Ransomware</a></p>
+
 <h3 id="rig">RIG</h3>
 
 <p>Wanting to validate this technique, we created an experimental setting using some workstations where we ran malware simulations (eg WannaCry, LockBit) contrasting them with RanFlood. This experimental setting deserves a separate chapter since it allows you to perform numerous tests in safety, with commonly used computers (simulating a situation as likely as possible) and without large investments such as the purchase of a server.</p>
+
+<p><a class="btn btn-primary text-white" href="/RIG/" role="button">RIG</a></p>
 
 <h3 id="results">Results</h3>
 
