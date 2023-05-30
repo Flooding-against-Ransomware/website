@@ -14,6 +14,7 @@ If you’re interested in RanFlood, you’re welcome to get in touch with any of
 - [Saverio Giallorenzo](https://www.saveriogiallorenzo.com/)
 - Andrea Melis
 - [Simone Melloni](https://scholar.google.com/citations?user=F4-_jnwAAAAJ&hl=en)
+- [Marco Prandini](https://www.unibo.it/sitoweb/marco.prandini/en)
 
 
 ---  

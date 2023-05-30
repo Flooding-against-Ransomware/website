@@ -4,10 +4,10 @@
 
 layout: page
 ---
+# A new method against ransomware
 
-![Logo Ranflood](/images/ranfloodLogo.png)
+<img src="/images/ranfloodLogo.png"   alt="Ranflood" class="img-fluid mx-auto">
 
-## RanFlood - sito in costruzione
 
 ### Intro
 
