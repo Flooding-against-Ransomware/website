@@ -16,9 +16,10 @@ title: Contact & Team
      The Ranflood Project is part of a collaboration between ARPAE - SSIID and Università di Bologna - DISI (Department of Computer Science - Science and Engineering) for the research and development of technologies to combat ransomware.
    </p>
 
-   <div class="offset-2 col-3"><img class="img-fluid" src="/images/arpae.jpg"></div>
-   <div class="offset-1 col-2"><img class="mt-4 img-fluid" src="/images/unibo.png"></div>
-
+   <div class="row justify-content-center">
+     <div class="col-3"><img class="img-fluid" src="/images/arpae.jpg"></div>
+     <div class="offset-1 col-2"><img class="mt-4 img-fluid" src="/images/unibo.png"></div>
+   </div>
    </div>
 
  </div>
