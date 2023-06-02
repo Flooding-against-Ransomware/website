@@ -11,8 +11,6 @@ GEM
     eventmachine (1.2.7)
     eventmachine (1.2.7-x86-mingw32)
     ffi (1.15.5)
-    ffi (1.15.5-x64-mingw-ucrt)
-    ffi (1.15.5-x86-mingw32)
     forwardable-extended (2.6.0)
     google-protobuf (3.23.2-arm64-darwin)
     google-protobuf (3.23.2-x64-mingw-ucrt)
