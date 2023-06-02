@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Contact & Team
+title: Team & Contact
 ---
 
    <div class="container">
 
    <div class="section-title">
      <h2>The Organisations and People Behind Ranflood</h2>
-     <p>Contact & Team</p>
+     <p>Team & Contact</p>
    </div>
 
    <div class="row content">

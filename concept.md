@@ -66,11 +66,9 @@ The idea behind *Data Flooding against Ransomware* develops this take on ubiquit
 honeypots against ransomware and gives it a Muhammad-and-the-Montain kind of
 twist:
 
-<div class="col-8 offset-2 pt-3 pb-1 text-center alert alert-info" markdown="1">
-
-*if the ransomware will not come to the trap, then the trap must go to the
-ransomware*
-
+<div class="col-8 offset-2 pt-3 pb-1 text-center alert alert-info">
+<p class="text-center" markdown="1">*if the ransomware will not come to the trap, then the trap must go to the
+ransomware*</p>
 </div>
 
 Instead of using static files and incurring in the related trap-surface
