@@ -50,7 +50,7 @@ selected environment---one can also mix different executables, e.g., if the user
 needs to control a Windows computer where the daemon is running from a Linux
 administration node.
 
-<div markdown="1">
+<div class="mt-5" markdown="1">
 After having downloaded the binaries of Ranflood, you can execute following the steps below:
 
 - uncompress the downloaded ZIP archive, which contains **both the daemon**
@@ -67,7 +67,7 @@ After having downloaded the binaries of Ranflood, you can execute following the 
 - start the daemon (`ranfloodd`)---our suggestion is to make it a system service
   launched with elevated rights at startup;
 - start the client (`ranflood`) to interact with the daemon (e.g., launch/stop
-  ransomware countermeasures and check their status).
+  ransomware countermeasures and check their status). To lean what commands you can issue to the Ranflood daemon, launch the client without parameters or with the command `ranflood --help`.
 
 </div>
 
