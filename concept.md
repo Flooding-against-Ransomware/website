@@ -10,7 +10,10 @@ title: Data Flooding Against Ransomware
   <p>Data Flooding against Ransomware</p>
 </div>
 
+<section>
+
 <div class="row content" markdown="1">
+
 
 Ranflood is part of a family of techniques, called **Data Flooding against
 Ransomware**, hinged on the *dynamic honeypot* approach and applicable to a
@@ -159,3 +162,4 @@ the tool, which hinders the attack of the ransomware and buys time for the
 users/administrators to intervene.
 
 </div>
+</section> 

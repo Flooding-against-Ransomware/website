@@ -3,26 +3,26 @@ layout: default
 title: Team & Contact
 ---
 
-   <div class="container">
+<div class="container">
 
-   <div class="section-title">
-     <h2>The Organisations and People Behind Ranflood</h2>
-     <p>Team & Contact</p>
-   </div>
+<div class="section-title">
+  <h2>The Organisations and People Behind Ranflood</h2>
+  <p>Team & Contact</p>
+</div>
 
-   <div class="row content">
+<section>
 
-   <p class="col-12">
-     The Ranflood Project is part of a collaboration between ARPAE - SSIID and Università di Bologna - DISI (Department of Computer Science - Science and Engineering) for the research and development of technologies to combat ransomware.
-   </p>
+<div class="row content">
 
-   <div class="row justify-content-center">
-     <div class="col-3"><img class="img-fluid" src="/images/arpae.jpg"></div>
-     <div class="offset-1 col-2"><img class="mt-4 img-fluid" src="/images/unibo.png"></div>
-   </div>
-   </div>
 
- </div>
+<p class="col-12">
+  The Ranflood Project is part of a collaboration between ARPAE - SSIID and Università di Bologna - DISI (Department of Computer Science - Science and Engineering) for the research and development of technologies to combat ransomware.
+</p>
+
+<div class="row justify-content-center">
+  <div class="col-3"><img class="img-fluid" src="/images/arpae.jpg"></div>
+  <div class="offset-1 col-2"><img class="mt-4 img-fluid" src="/images/unibo.png"></div>
+</div>
 
 <hr class="my-5">
 
@@ -35,3 +35,6 @@ If you want to know more, collaborate on the project (on the concepts and develo
 <p class="text-center fs-4 mt-5" markdown="1">
 [Saverio Giallorenzo](https://www.saveriogiallorenzo.com/) • [Andrea Melis](https://scholar.google.com/citations?user=iHQiXxsAAAAJ&hl=en&oi=ao) • [Simone Melloni](https://scholar.google.com/citations?user=F4-_jnwAAAAJ&hl=en) • [Marco Prandini](https://www.unibo.it/sitoweb/marco.prandini/en)
 </p>
+
+</div>
+</section>
