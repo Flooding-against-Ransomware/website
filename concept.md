@@ -124,7 +124,7 @@ We use the case of how Ranflood works to illustrate the principles behind DFaR.
 Above, we have a picture that depicts the action of some
 representative ransomware (top) and its interaction with a DFaR-based
 mitigation tool (bottom)---in the picture, we represent this tool with the
-Ranflood logo ![Ranflood logo](/images/favicon/favicon-16x16.png). 
+Ranflood logo ![Ranflood logo](/assets/img/favicon/favicon-16x16.png). 
 
 In the top part of the figure, at time t<sub>0</sub> (the left-most block on the
 line), the ransomware starts its attack on a target folder by encrypting the
