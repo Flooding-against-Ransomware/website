@@ -11,11 +11,17 @@ title: Publications
 </div>
 
 <section>
-<div class="row content">
 
-<ul>
-<li markdown="1">Berardi, D., Giallorenzo, S., Melis, A., Melloni, S., Onori, L., & Prandini, M. (2023). Data Flooding against Ransomware: Concepts and Implementations. Computers & Security, 103295. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167404823002055#preview-section-abstract">Article at Elsevier (needs subscription)</a>. <a href="https://saveriogiallorenzo.com/publications/cose2023/cose2023.pdf">Pre-print version</a>.</li>
-</ul>
+  <div class="row content">
+
+  <ul class="offset-1 col-10 list-group list-group-flush">
+    {% for p in site.data.papers %}
+    <li class="list-group-item"><a class="fs-3" href="{{ p.link }}"><i class="bi bi-file-earmark-pdf"></i></a>{{ p.entry }}
+    <p class="float-end">{{ p.other }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
 </section>
 </div>
 
