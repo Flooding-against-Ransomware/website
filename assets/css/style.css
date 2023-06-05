@@ -500,6 +500,7 @@ section {
   text-transform: uppercase;
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
+  line-height: normal;
 }
 
 .section-title h2::after {
