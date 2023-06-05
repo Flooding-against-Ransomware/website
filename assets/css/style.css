@@ -275,7 +275,7 @@ p {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #f8f9fae0;
   overflow-y: auto;
   transition: 0.3s;
 }
