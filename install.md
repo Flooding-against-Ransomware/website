@@ -89,7 +89,7 @@ included gradle script to compile it with the following commands:
 - `gradle jar` generates the jar executables of both the client and the daemon;
 - `gradle clientNativeImage` and `gradle clientNativeImage` respectively
   generate the native executable of the client and the daemon for the host
-  operating system (the process might require the installation of GraamVM 22);
+  operating system (the process might require the installation of GraalVM 22);
 
 </div>
 
