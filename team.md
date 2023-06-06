@@ -20,9 +20,16 @@ title: Team & Contact
 </p>
 
 <div class="row justify-content-md-center">
-  <div class="col col-lg-3 d-flex align-items-center">
-  <img class="img-fluid" src="/images/arpae.jpg"></div>
-  <div class="col offset-1 col-lg-5"><img class="mt-5 img-fluid" src="/images/unibo.png"></div>
+  <div class="col col-lg-3 d-flex align-items-center">  
+    <a href="https://www.arpae.it/it">
+      <img class="img-fluid" src="/images/arpae.jpg">
+    </a>
+  </div>
+  <div class="col offset-1 col-lg-5 d-flex align-items-center"> 
+    <a href="https://disi.unibo.it/en/index.html">
+      <img class=" img-fluid" src="/images/unibo.png">
+    </a>
+  </div>
 </div>
 
 <hr class="my-5">
