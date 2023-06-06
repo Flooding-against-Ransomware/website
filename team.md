@@ -29,7 +29,7 @@ title: Team & Contact
  <h3>Get in Touch</h3>
 
 <p class="col-12" markdown="1">
-If you want to know more, collaborate on the project (on the concepts and development of Ranflood, as well as industrial application cases), you are welcome to get in touch with any of the people below, start a discussion on our [GitHub project](https://github.com/Flooding-against-Ransomware), or contact the PI [Saverio Giallorenzo](https://www.saveriogiallorenzo.com/).
+To know more about and collaborate within the project (on the concepts and development of Ranflood, as well as industrial application cases), you are welcome to get in touch with any of the people below, start a discussion on our [GitHub project](https://github.com/Flooding-against-Ransomware), or contact the PI [Saverio Giallorenzo](https://www.saveriogiallorenzo.com/).
 </p>
 
 <p class="text-center fs-4 mt-5" markdown="1">
