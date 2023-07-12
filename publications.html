@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Publications
+title: Publications and Media
 ---
 
 <div class="container">
 
 <div class="section-title">
-  <h2>Scientific Dissemination and Publications about Ranflood</h2>
+  <h2>Dissemination and Scientific Publications about Ranflood</h2>
   <p>Publications</p>
 </div>
 
@@ -23,4 +23,24 @@ title: Publications
   </ul>
 
 </section>
+
+<div class="section-title">
+  <p>Media</p>
+</div>
+
+<section>
+
+  <div class="row content">
+
+  <ul class="offset-1 col-10 list-group list-group-flush">
+    {% for p in site.data.media %}
+    <li class="list-group-item"><a class="fs-3" target="_blank" href="{{ p.link }}"><i class="bi bi-arrow-up-right-square"></i></a> {{ p.entry }}
+    <p class="float-end">{{ p.other }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+</section>
+
+
 </div>
