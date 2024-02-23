@@ -3,5 +3,11 @@
     Prandini, M. (2023). Data Flooding against Ransomware: Concepts and
     Implementations. Computers & Security, 103295. 
   other: |
-    <a href="https://authors.elsevier.com/a/1hDQCc43v0Zl7">Article at Elsevier (might need subscription)</a> | <a href="https://saveriogiallorenzo.com/publications/cose2023/cose2023.pdf">Pre-print version</a>
-  link: https://saveriogiallorenzo.com/publications/cose2023/cose2023.pdf 
+    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167404823002055">Article at Elsevier</a> | <a href="https://saveriogiallorenzo.com/publications/cose2023/cose2023.pdf">Pre-print version</a>
+  link: https://www.sciencedirect.com/science/article/abs/pii/S0167404823002055
+- entry: | 
+    Berardi, D., Giallorenzo, S., Melis, A., Melloni, S., &
+    Prandini, D. (2023). Ranflood: A mitigation tool based on the principles of data flooding against ransomware. SoftwareX 25, 101605.
+  other: |
+    <a href="https://www.sciencedirect.com/science/article/pii/S2352711023003011">Article at Elsevier</a>
+  link: https://www.sciencedirect.com/science/article/pii/S2352711023003011
